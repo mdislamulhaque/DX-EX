@@ -1,0 +1,55 @@
+
+
+
+/* Custom Colors */
+:root {
+  --color-primary: #0845d4;
+  --color-secondary: #ff7f00;
+  --color-gradient-start: #ffea00;
+  --color-gradient-end: #007bff;
+}
+
+/* Custom Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700&display=swap");
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.text-primary{
+    color: var(--color-primary);
+}
+.bg-primary{
+    background: var(--color-primary);
+}
+
+.primary-color{
+  color: var(--color-primary);
+}
+
+/* Custom Gradient */
+.bg-primary-gradient {
+ background: linear-gradient(114deg, rgba(20,50,115,1) 19%, rgba(107,75,213,1) 42%, rgba(80,108,221,1) 63%, rgba(2,25,128,1) 100%);
+ background-repeat: no-repeat;
+}
+
+  html{
+          scroll-behavior: smooth;
+        }
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 60px;
+            right: 30px;
+            background-color:var(--color-primary);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none; /* Default hidden */
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+
+        #scrollTopBtn:hover {
+            background-color: var(--color-primary);
+        }
