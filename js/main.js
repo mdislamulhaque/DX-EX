@@ -1,4 +1,4 @@
-console.log("connected")
+console.log("connected");
 
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 
@@ -45,8 +45,6 @@ scrollTopBtn.addEventListener("click", function () {
   });
 });
 
-
-
 function toggleDropdown() {
   document.getElementById("language-dropdown").classList.toggle("hidden");
 }
@@ -65,8 +63,6 @@ document.addEventListener("click", function (event) {
 });
 
 // ===============
-
-
 
 let hasScrolled = false; // Track if navbar has already hidden once
 const navbar = document.getElementById("navbar");

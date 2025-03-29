@@ -42,7 +42,6 @@
             position: fixed;
             bottom: 60px;
             right: 30px;
-            background-color:var(--color-primary);
             color: white;
             border: none;
             cursor: pointer;
