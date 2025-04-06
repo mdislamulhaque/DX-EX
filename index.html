@@ -68,13 +68,13 @@
             <!-- Right Side: Button -->
             <div class="hidden lg:flex gap-4 justify-center items-center">
               <a
-                href=""
+                href="signUp.html"
                 id="btn"
                 class="px-4 py-2 font-bold bg-blue-700 hover:bg-blue-900 transition-all duration-300 text-white block rounded-md"
                 >Sign Up</a
               >
               <a
-                href=""
+                href="login.html"
                 id="btn"
                 class="px-4 py-2 font-bold bg-blue-700 hover:bg-blue-900 transition-all duration-300 text-white block rounded-md"
                 >Login</a
@@ -184,13 +184,13 @@
         >
           <div class="flex gap-4 justify-end items-center pe-10">
             <a
-              href=""
+              href="signUp.html"
               id="btn"
               class="px-4 py-2 font-bold bg-blue-700 rounded-md hover:bg-blue-900  text-white block"
               >Sign Up</a
             >
             <a
-              href=""
+              href="login.html"
               id="btn"
               class="px-4 py-2 font-bold  bg-blue-700 rounded-md hover:bg-blue-900  text-white block"
               >Login</a
@@ -274,20 +274,25 @@
       <div class="flex justify-center flex-col lg:flex-row mt-8 md:gap-6 md:w-[80%] mx-auto">
         <!-- left  -->
         <div>
-           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2">
+           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2 order-1">
             <div class="rounded-full bg-primary size-6 flex justify-center items-center text-white p-6 text-2xl font-bold">1</div>
             <h3 class="font-bold">Sign Up</h3>
             <p class="w-2/3">Start your journey by creating your free account</p>
           </div>
-          <div class="p-4 py-10 flex place-items-end m-2 hidden md:block">
+          <div class="p-4 py-10 flex place-items-end m-2 hidden lg:block">
            <img src="./src/assets/icons/icons8-user-check-96.png" alt="">
           </div>
-            <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2">
+           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2 lg:hidden">
+            <div class="rounded-full bg-primary size-6 flex justify-center items-center text-white p-6 text-2xl font-bold">2</div>
+            <h3 class="font-bold">Verify Account</h3>
+            <p class="w-2/3">Quickly verify your account including email, sms, KYC verification</p>
+          </div>
+            <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2 hidden lg:block">
             <div class="rounded-full bg-primary size-6 flex justify-center items-center text-white p-6 text-2xl font-bold">3</div>
             <h3 class="font-bold">Buy / Sale Commodities</h3>
             <p class="w-2/3">After your account verification, buy or sell your favorite commodities</p>
           </div>
-           <div class="p-4 py-10 flex place-items-end m-2 hidden md:block">
+           <div class="p-4 py-10 flex place-items-end m-2 hidden lg:block">
             <img src="./src/assets/icons/icons8-receive-dollar-96.png" class="" alt="">
           </div>
         </div>
@@ -299,18 +304,23 @@
          </div>
         <!-- right  -->
         <div>  
-          <div class=" p-4 py-10 flex place-items-start m-2 hidden md:block">
+          <div class=" p-4 py-10 flex place-items-start m-2 hidden lg:block">
            <img src="./src/assets/icons/icons8-user-plus-96.png" alt="">
           </div>
-           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2">
+            <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2 lg:hidden">
+            <div class="rounded-full bg-primary size-6 flex justify-center items-center text-white p-6 text-2xl font-bold">3</div>
+            <h3 class="font-bold">Buy / Sale Commodities</h3>
+            <p class="w-2/3">After your account verification, buy or sell your favorite commodities</p>
+          </div>
+           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2 order-2 hidden lg:block">
             <div class="rounded-full bg-primary size-6 flex justify-center items-center text-white p-6 text-2xl font-bold">2</div>
             <h3 class="font-bold">Verify Account</h3>
             <p class="w-2/3">Quickly verify your account including email, sms, KYC verification</p>
           </div>
-           <div class="p-4 py-10 flex place-items-start m-2 hidden md:block">
+           <div class="p-4 py-10 flex place-items-start m-2 hidden lg:block">
           <img src="./src/assets/icons/icons8-chart-100.png" alt="" class="size-20">
           </div>
-           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2">
+           <div class="bg-blue-300 rounded-md px-4 py-6 m-2 space-y-2 order-4">
             <div class="rounded-full bg-primary size-6 flex justify-center items-center text-white p-6 text-2xl font-bold">4</div>
             <h3 class="font-bold">Win and Earn Money</h3>
             <p class="w-2/3">Earn money by sale or buying commodities on our platform within a short time</p>
@@ -964,6 +974,6 @@
       <i class="fa-solid fa-angle-up text-xl absolute top-3 right-4"></i>
       <i class="fa-solid fa-angle-up text-xl absolute top-5 right-4"></i>
     </button>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
