@@ -68,3 +68,92 @@ document.addEventListener("click", function (event) {
     dropdownList.style.display = "none";
   }
 });
+
+// ============================
+
+document.getElementById("signUpForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const country = document.getElementById("selected-country").innerText.trim();
+  const fullName = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phoneCode = document.getElementById("phoneCode").value.trim();
+  const dob = document.getElementById("date").value;
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirm-password").value;
+  const termsChecked = document.getElementById("terms").checked;
+  const countryError = document.getElementById("country-error");
+  countryError.innerText = "";
+  const fullNameError = document.getElementById("full-name-error");
+  fullNameError.innerText = "";
+  const emailError = document.getElementById("email-error");
+  emailError.innerText = "";
+  const phoneNumberError = document.getElementById("phone-number-error");
+  phoneNumberError.innerText = "";
+  const dobError = document.getElementById("dob-error");
+  dobError.innerText = "";
+  const passwordError = document.getElementById("password-error");
+  passwordError.innerText = "";
+  const passwordMatchError = document.getElementById("password-match-error");
+  passwordMatchError.innerText = "";
+  const conditionError = document.getElementById("condition-error");
+  conditionError.innerText = "";
+
+  // Country validation
+  if (country === "Select a country") {
+    countryError.innerText = "Please select a country.";
+    return;
+  }
+
+  // Full name
+  if (fullName === "") {
+    fullNameError.innerText = "Please enter your full name.";
+    return;
+  }
+
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    emailError.innerText = "Please enter a valid email address.";
+    return;
+  }
+
+  // Phone number validation
+  if (phoneCode === "") {
+    phoneNumberError.innerText = "Please enter your phone code.";
+    return;
+  }
+
+  // DOB check
+  if (!dob) {
+    dobError.innerText = "Please select your date of birth.";
+    return;
+  }
+
+  // Password checks
+  if (password.length < 6) {
+    passwordError.innerText = "Password must be at least 6 characters.";
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    passwordMatchError.innerText = "Passwords do not match.";
+    return;
+  }
+
+  // Terms & Conditions check
+  if (!termsChecked) {
+    conditionError.innerText = "You must agree to the Terms & Conditions.";
+    return;
+  }
+
+  // After all validations pass
+  Swal.fire({
+    title: "Success!",
+    text: "Sign up successful!",
+    icon: "success",
+    confirmButtonText: "Continue to Login",
+  }).then(() => {
+    window.location.href = "./login.html";
+  });
+});

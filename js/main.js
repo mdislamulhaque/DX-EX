@@ -83,3 +83,5 @@ window.addEventListener("scroll", function () {
     hasScrolled = true; // Mark that the navbar has hidden once
   }
 });
+
+
