@@ -6,23 +6,25 @@
     <title>Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  
+
   <body>
     <section
-      class="min-h-screen flex items-center justify-center px-6 bg-gradient-to-tr from-[#133273] via-blue-700/75 to-[#133273]"
+      class="min-h-screen flex items-center justify-start bg-[url('https://images.pexels.com/photos/5882683/pexels-photo-5882683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center bg-no-repeat"
     >
-      <div
-        class="bg-black/50 backdrop-blur-md p-8 shadow-lg w-full max-w-md my-12"
-      >
+      <div class="bg-black/50 backdrop-blur-md shadow-lg w-1/2 p-6">
         <h2 class="text-3xl font-bold text-center text-white mb-6">Sign Up</h2>
 
         <form action="#" method="POST" class="space-y-4">
           <div>
-            <label for="country" class="text-white block mb-1">Select Country</label>
+            <label for="country" class="text-white block mb-1"
+              >Select Country</label
+            >
             <div id="custom-dropdown">
-              <div id="selected-country" class="text-black/50- tracking-wide">Select a country</div>
+              <div id="selected-country" class="text-black/50- tracking-wide">
+                Select a country
+              </div>
               <div id="dropdown-list">
                 <input
                   type="text"
@@ -60,20 +62,23 @@
             />
           </div>
 
-        <div>
-  <label for="phoneNumber" class="text-white block mb-1">Phone Number</label>
-  <div class="input-group focus:outline-none focus:ring-2 focus:ring-green-500 relative">
-    <img
-      id="phone-flag"
-      src=""
-      alt="Country Flag"
-      class="absolute left-2 top-1/2 transform -translate-y-1/2"
-      style="display: none;"
-    />
-    <input type="text" id="phoneCode" class="phone-input pl-12" />
-  </div>
-</div>
-
+          <div>
+            <label for="phoneNumber" class="text-white block mb-1"
+              >Phone Number</label
+            >
+            <div
+              class="input-group focus:outline-none focus:ring-2 focus:ring-green-500 relative"
+            >
+              <img
+                id="phone-flag"
+                src=""
+                alt="Country Flag"
+                class="absolute left-2 top-1/2 transform -translate-y-1/2"
+                style="display: none"
+              />
+              <input type="text" id="phoneCode" class="phone-input pl-12" />
+            </div>
+          </div>
 
           <div>
             <label for="password" class="block text-white font-medium mb-2"
@@ -141,6 +146,6 @@
         </p>
       </div>
     </section>
-    <script type="module" src="./js/sign-up.js"></script>
+    <script src="./js/sign-up.js"></script>
   </body>
 </html>

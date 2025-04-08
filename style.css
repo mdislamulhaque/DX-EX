@@ -60,7 +60,7 @@
       outline: none;
       width: 100%;
       font-size: 16px;
-      background-color: #949db5
+      background-color: #9e9d9b
     }
 
     #custom-dropdown {
@@ -76,7 +76,7 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      background-color: #949db5
+      background-color:#9e9d9b
       /* border-radius: 5px; */
     }
 
